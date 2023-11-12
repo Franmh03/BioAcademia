@@ -1,0 +1,435 @@
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.nav__div__a__img{
+  width: 150px;
+  height: auto;
+  padding-right: 30px;
+}
+.footer__section { display: flex; 
+  height: 100%; 
+  align-items: center;}
+/* incio INDEX */
+/* inicio Contenedor 1 INDEX */
+
+.div__article--Contenedor1 {
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(196, 196, 196);
+}
+  
+
+.div__article__h1 {
+  padding-bottom: 15px;
+}
+.div__article__p{
+  width: 280px;
+}
+.div__article__img--cientifico {
+  height: 330px; 
+}
+@media (max-width:380px) {
+  .div__article__img--cientifico {
+    width: 80%; 
+    height: auto; 
+  }
+  .div__article__p{
+    width: auto;
+  }
+  .div--contenedor1 {
+    padding-left: 20px;
+  }
+}
+@media (min-width:380px) {
+
+  .div__article__p{
+    width: 290px;
+  }
+  .div__article__div{
+    text-align: center;
+  }
+  .div__article__p {margin: 0 auto;}
+}
+
+@media (min-width:760px) {
+  .div__article__div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .div__article__h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: auto 0;
+  }
+  .div__article__p{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .div__article__img--cientifico{
+    grid-column: 2 / 3;
+    grid-row: -3/-1;}
+
+}
+/* fin Contenedor 1 INDEX */
+/* inicio Contenedor 2 INDEX */
+
+.article--contenedor2{
+  margin: 10px 0px;
+  background-color: rgb(231, 231, 231);
+  padding-top: 20px;
+}
+.article__ul__div--contenedorVentajas{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.article__div__img--indexArticulo2 {
+  height: 50px;
+  width: 50px;
+  margin-right: 7px;
+}
+.article__ul__div__p{
+  width: 286px;
+}
+
+@media (min-width:760px) {
+  .article__ul--ventajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (max-width:365px) {
+  .article__ul__div__p{
+    width: auto;
+  }
+}
+/* fin Contenedor 2 INDEX */
+/* inicio Contenedor 3 INDEX */
+
+.article--contenedor3{
+  background-color: rgb(196, 196, 196);
+  margin: 10px 0px;
+  padding-top: 20px;
+}
+
+.article__ul__li--oferta{
+  list-style-type: none;
+  width: 170px;
+  margin: 0 auto;
+}
+
+@media (min-width:380px) {
+  .article__ul--oferta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr
+    );    
+  }
+ 
+}
+@media (min-width:760px) {
+  .article__ul--oferta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr
+    );
+
+    width: 600px;
+    margin: 0 auto;
+  }    
+}
+@media (min-width:1000px) {
+  .article__ul--oferta {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }    
+  .article__ul__li--oferta {margin: auto 80px;}
+}
+
+/* fin Contenedor 3 INDEX */
+/* inicio Contenedor 4 INDEX */
+
+.article--contenedor4{
+  margin: 20px 0px;
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+}
+
+.article__div__ul--check {
+  list-style-type: none  ;
+  margin: 0 auto ;
+  
+}
+
+
+
+.article__div--curso2 {
+  width: 75%;
+  padding-left: 13%;
+}
+
+.article__img--laboratorio {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.article__div__ul__li--1 img{
+  width: 20px; 
+}
+.article__div__ul__li--2 img{
+  width: 20px;
+}
+
+.article__div__ul--check{
+  padding-left: 0;
+  }
+/* 
+
+ESTOY INTENTANDO ELIMINAR MARGIN AL LADO DE TEXTO Y CENTRAR LA IMAGEN LABORATORIO
+
+*/
+@media (min-width:760px) {
+  .article--contenedor4{
+    width: 100%;
+    height: 100%;
+  }
+  .article__div--curso1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .article__div--curso2{
+    margin: auto 0 ;
+    width: auto;
+  }
+  .article__img--laboratorio{
+    margin-bottom: 0px;
+    max-height: 400px;
+    width: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .article__div--curso2 {
+    padding-left: 5%;
+  }
+  .article__div__p--curso{
+    max-width: 300px;
+  }
+
+}
+
+@media (min-width:1060px) {
+  .article__div__ul--check{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .article__div__ul__li--1{
+    width: 160px;
+    margin-bottom: 10px;
+  }
+
+  .article__div__ul__li--2{
+    width: 160px;
+  }
+
+
+  .article__div__ul__li--1 img{
+    width: 15px; 
+    margin: 0 auto;
+  }
+  .article__div__ul__li--2 img{
+    width: 15px;
+  }
+}
+
+
+
+/* Estilo letras */
+
+.centrado {text-align: center;}
+
+.encabezado {font-size: 30px; font-weight: 600;}
+
+.p1 {font-weight: 350;}
+
+/* Fin estilo letras */
+
+
+
+/* POP UP INICIO (Lo tuve que hacer sin bootstrap porque el modal de Bootstrap no es soportado en browser de linux) */
+  .button--new {
+    
+    font-size: 17px;
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #fff;
+    border: 2px solid #f5d234;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    
+  }
+  .button--new:hover {
+    background: #f5d234;
+  }
+  
+  .div--overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .div--overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .div--popUp {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .div--popUp h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .div--popUp .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .div--popUp .close:hover {
+    color: #06D85F;
+  }
+  .div--popUp .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+.box {
+  padding-top: 19px;
+ text-align: end;
+ margin-right: 45px;
+}
+.button {
+  
+  font-size: 17px;
+  padding: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #fff;
+  border: 2px solid #f5d234;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  
+}
+.button:hover {
+  background: #f5d234;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.div--popUp--form {
+    display: flex;
+    flex-direction: column;
+}
+.colocar-nombre {
+    display: inline;
+}
+@media (max-width:900px)and (min-width:600px) {
+    .div--popUp {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .div--popUp {
+        width: 70%;
+    }
+
+}
+/* Fin popup */
+
+
